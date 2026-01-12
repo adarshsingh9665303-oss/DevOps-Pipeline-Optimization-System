@@ -35,7 +35,5 @@ def update_pipeline(pipeline_id, updated_data):
 
 def delete_pipeline(pipeline_id):
     data = read_data()
-    data["pipelines"] = [
-        p for p in data["pipelines"] if p["id"] != pipeline_id
-    ]
+    data["pipelines"] = [p for p in data["pipelines"] if p["id"] != pipeline_id]
     write_data(data)
