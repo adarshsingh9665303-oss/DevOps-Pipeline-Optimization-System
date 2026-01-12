@@ -42,7 +42,7 @@ jobs:
 
       # Step 6: Linting (Ruff)
       - name: Run Ruff
-        run: ruff .
+        run: ruff check .
 
       # Step 7: Run tests (Pytest)
       - name: Run tests
